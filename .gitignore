@@ -1,0 +1,11 @@
+.DS_Store
+.vscode
+.atom
+.idea
+
+node_modules/
+dist/
+
+*.log
+*-debug.log.*
+*.iml
