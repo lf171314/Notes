@@ -18,7 +18,7 @@
 
 ### 安装 start 模板
 
-```shell
+```
 npm install -g vue-cli	// 安装 vue-cli 
 vue init nuxt/start <project name>	// 创建 nuxt 的 start 模板
 cd <project name>	// 进入项目根目录
@@ -28,7 +28,7 @@ npm run dev		// 启动项目
 
 ### 安装 expres 模板
 
-```shell
+```
 npm install -g vue-cli	// 安装 vue-cli 
 vue init nuxt/express <project name>	// 创建 nuxt 的 express 模板
 cd <project name>	// 进入项目根目录
@@ -38,7 +38,7 @@ npm run dev		// 启动项目
 
 ### 安装 koa 模板
 
-```shell
+```
 npm install -g vue-cli	// 安装 vue-cli 
 vue init nuxt/koa <project name>	// 创建 nuxt 的 koa 模板
 cd <project name>	// 进入项目根目录
