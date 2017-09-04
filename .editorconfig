@@ -1,0 +1,27 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+# editorconfig 文件查找目录
+root = true
+
+# Unix-style newlines with a newline ending every file
+# 所有文件
+[*]
+# 文件编码格式 utf-8
+charset = utf-8
+# 行结束文件格式
+end_of_line = lf
+# 缩进类型
+indent_style = space
+# 缩进长度
+indent_size = 2
+# 表示行尾是否留有空格
+trim_trailing_whitespace = true
+# 表示文件是否应以换行符结尾
+insert_final_newline = true
+
+# 针对 markdown 文件
+[*.md]
+# 表示行尾是否留有空格
+trim_trailing_whitespace = false
+# 表示文件是否应以换行符结尾
+insert_final_newline = false
