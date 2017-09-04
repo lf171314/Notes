@@ -16,32 +16,32 @@
 
 ### 安装 start 模板
 
-```shell
-npm install -g vue-cli    // 安装 vue-cli
-vue init nuxt/start <project name>    // 创建 nuxt 的 start 模板
-cd <project name>    // 进入项目根目录
-npm install        // 安装依赖
-npm run dev        // 启动项目
+```
+npm install -g vue-cli	// 安装 vue-cli 
+vue init nuxt/start <project name>	// 创建 nuxt 的 start 模板
+cd <project name>	// 进入项目根目录
+npm install		// 安装依赖
+npm run dev		// 启动项目
 ```
 
 ### 安装 expres 模板
 
-```shell
-npm install -g vue-cli    // 安装 vue-cli
-vue init nuxt/express <project name>    // 创建 nuxt 的 express 模板
-cd <project name>    // 进入项目根目录
-npm install        // 安装依赖
-npm run dev        // 启动项目
+```
+npm install -g vue-cli	// 安装 vue-cli
+vue init nuxt/express <project name>	// 创建 nuxt 的 express 模板
+cd <project name>	// 进入项目根目录
+npm install		// 安装依赖
+npm run dev		// 启动项目
 ```
 
 ### 安装 koa 模板
 
-```shell
-npm install -g vue-cli    // 安装 vue-cli
-vue init nuxt/koa <project name>    // 创建 nuxt 的 koa 模板
-cd <project name>    // 进入项目根目录
-npm install        // 安装依赖
-npm run dev        // 启动项目
+```
+npm install -g vue-cli	// 安装 vue-cli
+vue init nuxt/koa <project name>	// 创建 nuxt 的 koa 模板
+cd <project name>	// 进入项目根目录
+npm install		// 安装依赖
+npm run dev		// 启动项目
 ```
 
 > `npm run dev`后在浏览器输入 <http://127.0.0.1:3000> 来访问运行的项目
