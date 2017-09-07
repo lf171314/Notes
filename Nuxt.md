@@ -351,8 +351,8 @@ router: {
 module.exports = {
   modules: [
     ['@nuxtjs/proxy']
-  ]
-  proxy: {
+  ],
+  proxy: {
     "/webapi/v1/": {
       target: "http://api.douban.com",
       ws: false
