@@ -342,14 +342,17 @@ router: {
 
 ### 反向代理设置
 
-> 设置反向代理的时候使用官方的`@nuxt/proxy`包。
+> 设置反向代理的时候使用官方的`@nuxtjs/proxy`包。
 
-+ 通过 `npm install @nuxt/proxy -D`命令安装。
++ 通过 `npm install @nuxtjs/proxy -D`命令安装。
 + 对应的`nuxt.config.js`配置如下：
 
 ```javascript
 module.exports = {
-  proxy: {
+  modules: [
+    ['@nuxtjs/proxy']
+  ],
+  proxy: {
     "/webapi/v1/": {
       target: "http://api.douban.com",
       ws: false
@@ -400,7 +403,7 @@ module.exports = {
     lang: 'scss'
   }],
   build: {
-	filenames: {
+	  filenames: {
         css: 'styles.[chunkhash:7].css'
     }
     extractCSS: true
