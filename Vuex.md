@@ -22,13 +22,13 @@ const store = new Vuex.Store({
     count: 0
   },
   gettes: {
-    getCount (state) {
+    getCount: state => {
         return state.count
     }  
   },
   mutations: {
-    addCount (state, payload = 1) {
-      state.count += payload.total
+    addCount (state, payload) {
+      state.count += payload.count
     }
   },
   actions: {
@@ -107,4 +107,13 @@ computed: mapState([
 ])
 ```
 
-因为`mapState`函数返回的是一个对象，因此，可以通过对象展开运算符，展开该对象
+因为`mapState`函数返回的是一个对象，因此，可以通过**对象展开运算符**，展开该对象。
+
+```javascript
+computed: {
+  ...mapState({
+    count: state => state.count
+  })
+}
+```
+
