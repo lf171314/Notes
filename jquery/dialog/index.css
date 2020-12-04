@@ -4,12 +4,12 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1050
+  z-index: 1050;
 }
 
 .dialog-wrap .dialog {
   position: absolute;
-  left: 50%
+  left: 50%;
 }
 
 .dialog-mask {
@@ -18,26 +18,26 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, .7);
-  z-index: 9
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9;
 }
 
 .dialog-box {
   position: absolute;
   top: 50%;
   left: 50%;
-  background: #fff
+  background: #fff;
 }
 
 .dialog-header {
   border-bottom: 1px solid #ccc;
   position: relative;
-  padding: 0 12px
+  padding: 0 12px;
 }
 
 .dialog-header .dialog-title {
   color: #666;
-  font-size: 16px
+  font-size: 16px;
 }
 
 .dialog-icon-close {
@@ -46,17 +46,17 @@
   right: 10px;
   top: 10px;
   font-size: 24px;
-  font-weight: 700
+  font-weight: 700;
 }
 
 .dialog-content {
   padding: 12px;
   line-height: 24px;
   font-size: 14px;
-  min-width: 200px
+  min-width: 200px;
 }
 
 .dialog-footer {
   padding: 6px;
-  text-align: right
+  text-align: right;
 }

@@ -8,28 +8,28 @@
  * @return {object} dialog
  */
 /**
- * 参数说明
- * title: {String} dialog 标题, // 默认 ‘提示’
- text: {String} dialog 内容,
- icon: {Number} dialog 图标 0 empty 1 success 2 info 3 warning 4 loading，// 默认 0
- isMask: {Boolean} 是否遮罩 truthy 遮罩 falsy 不遮罩, // 默认 true
- time: {Number} msg弹窗消失时间 单位ms 默认 2000
+ *  参数说明
+ *  title: {String} dialog 标题, // 默认 ‘提示’
+    text: {String} dialog 内容,
+    icon: {Number} dialog 图标 0 empty 1 success 2 info 3 warning 4 loading，// 默认 0
+    isMask: {Boolean} 是否遮罩 truthy 遮罩 falsy 不遮罩, // 默认 true
+    time: {Number} msg弹窗消失时间 单位ms 默认 2000
 
- closeable: {Boolean} 点击遮罩是否关闭dialog  truthy 是 falsy 否, // 默认 true
- ok: {Function} 成功回调,
- cancel: {Function} 取消回调,
- cancelText: {String} 取消按钮文本, // 默认 ‘取消’
- okText: {String} 成功按钮文本, // 默认 ‘确认’
- cancelUrl: {String} 取消跳转链接,
- okUrl: {String} 成功跳转链接,
- mounted: {Function} DOM 插入 HTML 后执行的回调函数,
+    closeable: {Boolean} 点击遮罩是否关闭dialog  truthy 是 falsy 否, // 默认 true
+    ok: {Function} 成功回调,
+    cancel: {Function} 取消回调,
+    cancelText: {String} 取消按钮文本, // 默认 ‘取消’
+    okText: {String} 成功按钮文本, // 默认 ‘确认’
+    cancelUrl: {String} 取消跳转链接,
+    okUrl: {String} 成功跳转链接,
+    mounted: {Function} DOM 插入 HTML 后执行的回调函数,
 
- className: {String} dialog 自定义 class,
- wrapClass: {String} dialog 外层自定义 class,
- headerTemp: {String} dialog 头部自定义模板, 传null为空模板
- bodyTemp: {String} dialog 内容自定义模板, 传null为空模板
- footerTemp: {String} dialog 底部自定义模板, 传null为空模板
- container: {String} loading 容器 id 或者 className， 默认 'body', 目前仅 loading 使用
+    className: {String} dialog 自定义 class,
+    wrapClass: {String} dialog 外层自定义 class,
+    headerTemp: {String} dialog 头部自定义模板, 传null为空模板
+    bodyTemp: {String} dialog 内容自定义模板, 传null为空模板
+    footerTemp: {String} dialog 底部自定义模板, 传null为空模板
+    container: {String} loading 容器 id 或者 className， 默认 'body', 目前仅 loading 使用
  */
 /**
  * @description model 对话框
@@ -77,7 +77,7 @@
  *    <p>文本</p>
  * </div>
  */
-;(function ($) {
+; (function ($) {
   function Dialogs() {
     this.options = {
       container: 'body',
@@ -106,7 +106,7 @@
   }
 
   Dialogs.prototype = {
-    noop: function () {},
+    noop: function () { },
     render: function (config) {
       this.config = $.extend({}, this.options, config || {});
       var compile;
@@ -297,7 +297,7 @@
       }
 
       if (conf.text) {
-        conf.bodyTemp += '<p>'+ conf.text +'</p>'
+        conf.bodyTemp += '<p>' + conf.text + '</p>'
       }
 
       var $oDiv = $("<div class='dialog-msg'></div>").html(conf.bodyTemp);
